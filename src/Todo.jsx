@@ -34,7 +34,7 @@ function Todo() {
           <>
           <li key={index} style={{ textDecoration: todo.completed ? 'line-through' : 'none' }}>
             {todo.text} </li>
-            <button className='complete' onClick={() => toggleComplete(index)}>done</button> 
+            <button className='complete' onClick={() => toggleComplete(index)}>Done</button> 
             <button className='delete' onClick={() => setTodos(todos.filter((_, i) => i !== index))}>Delete</button>
            </>
         ))}
